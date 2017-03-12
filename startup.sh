@@ -11,8 +11,8 @@ while  true
 do
     date=$(date +%s+%N);
     name=${date}".dbf"
-    `time dd if=/dev/zero of=/home/docker/dbffiles/${name} bs=64k count=256 conv=fsync >/dev/null  2>&1`
-    `rm ~/dbffiles/${name}`
+    `time dd if=/dev/zero of=/tempfiles/${name} bs=64k count=256 conv=fsync >/dev/null  2>&1`
+    `rm /tempfiles/${name}`
 	curl -s 'http://www.baidu.com'>/dev/null
 	sleep 1
 done
