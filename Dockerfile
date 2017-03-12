@@ -5,4 +5,4 @@ ADD cpuratio /cpuratio
 RUN apt-get update && apt-get install -y stress \
     && apt-get autoclean \
     && apt-get autoremove
-ENTRYPOINT ["/startup.sh"]
+ENTRYPOINT ["/bin/sh","/startup.sh"]
