@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # run cpuratio
 /cpuratio &
 #run stress memratio
