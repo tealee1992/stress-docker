@@ -11,7 +11,7 @@ while  true
 do
     date=$(date +%s+%N);
     name=${date}".dbf"
-    `dd if=/dev/zero of=/tempfiles/${name} bs=64k count=256 conv=fsync >/dev/null  2>&1`
+    `dd if=/dev/zero of=/tempfiles/${name} bs=64k count=1 conv=fsync >/dev/null  2>&1`
     `rm /tempfiles/${name}`
 	curl -s 'http://www.baidu.com'>/dev/null
 	sleep 1
