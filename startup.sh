@@ -3,7 +3,7 @@
 /cpuratio &
 #run stress memratio
 stress --vm 1 --vm-bytes 128M --vm-hang 0 &
-
+#stress --vm 1 --vm-bytes 256M --vm-hang 0 &
 
 
 # just keep this script running and run net-ioratio
